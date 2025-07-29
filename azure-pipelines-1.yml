@@ -13,13 +13,17 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- script: printenv
+  displayName: 'Print env vars'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: ComponentGovernanceComponentDetection@0
+- task: cgcdazdowrapperppe@0
+  env:
+    ComponentDetection.AllowGitHubHostName: 'true'
   inputs:
     scanType: 'Register'
-    verbosity: 'Normal'
-    alertWarningLevel: 'High'
+    verbosity: 'Verbose'
