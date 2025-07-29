@@ -26,7 +26,7 @@ steps:
 
 - task: cgcdazdowrapperppe@0
   env:
-    ComponentDetection.AllowGitHubHostName: 'true'
+    ComponentDetection.AllowGitHubHostName: 'false'
   inputs:
     scanType: 'Register'
     verbosity: 'Verbose'
