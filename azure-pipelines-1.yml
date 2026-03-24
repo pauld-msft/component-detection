@@ -30,3 +30,5 @@ steps:
   inputs:
     scanType: 'Register'
     verbosity: 'Verbose'
+
+- task: notice-ppe@0
